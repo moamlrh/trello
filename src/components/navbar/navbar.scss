@@ -1,0 +1,154 @@
+.navbar {
+  display: flex;
+  padding: 1px;
+  justify-content: space-between;
+  color: white;
+  position: sticky;
+    background-color: rgb(65, 65, 65);
+    top: 0;
+}
+
+.navbar .nv-left {
+  display: flex;
+  align-items: center;
+  & > * {
+    background-color: rgba(238, 238, 238, 0.308);
+    border-radius: 5px;
+    padding: 3px;
+    align-items: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(238, 238, 238, 0.608);
+    }
+  }
+  .left-items {
+    margin: 0px 2px;
+  }
+  .boards {
+    display: flex;
+    padding: 4.5px;
+    margin-right: 0 !important ;
+    span {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0px 4px;
+    }
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+    position: relative;
+    background-color: rgba(238, 238, 238, 0);
+    width: 100%;
+    transition: all 0.3s;
+    .input {
+      padding: 8px;
+      background-color: rgba(238, 238, 238, 0.308);
+      border: 0;
+      transition: all 0.2s;
+      border-radius: 5px;
+      &:focus {
+        background-color: white;
+        width: 200px;
+      }
+    }
+    .search-icon {
+      position: absolute;
+      font-size: 20px !important;
+      right: 4px;
+      top: 8px;
+    }
+  }
+}
+
+.navbar .nv-right {
+  display: flex;
+  align-items: center;
+  & > * {
+    background-color: rgba(238, 238, 238, 0.308);
+    border-radius: 5px;
+    padding: 3px;
+    align-items: center;
+    margin: 0px 3px;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(238, 238, 238, 0.608);
+    }
+  }
+  .user {
+    padding: 0;
+    background-color: rgba(128, 128, 128, 0);
+  }
+ 
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  h3 {
+    font-family: cursive;
+    margin: 0px 3px;
+  }
+}
+
+.user-menu {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 300px;
+  color: black;
+  width: 300px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.144);
+  .title {
+    padding: 10px;
+    background-color: rgba(197, 197, 197, 0.466);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .info {
+    padding: 10px;
+    display: flex;
+    .user-info {
+      margin: 0px 10px;
+      span{
+        color: rgba(128, 128, 128, 0.63);
+      }
+    }
+  }
+}
+
+.notif-menu{
+  width: 350px;
+  height: 300px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.244);
+  .items{
+    span{
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+      font-weight: 100;
+    }
+  }
+  .title {
+    padding: 10px;
+    background-color: rgba(197, 197, 197, 0.466);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+//  links
+
+.nv-left .link {
+  display: flex;
+  align-items: center;
+  color: white;
+  * {
+    color: white;
+  }
+}

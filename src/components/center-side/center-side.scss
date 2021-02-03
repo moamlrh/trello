@@ -1,0 +1,287 @@
+.center-side {
+  width: 500px;
+}
+//------------------------ HOME
+.home {
+  width: 90%;
+  padding: 10px;
+}
+.home .post {
+  margin: 40px 10px;
+  background-color: rgb(73, 114, 226);
+  padding: 10px;
+  border-radius: 5px;
+  .post-info {
+    background-color: white;
+    p {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background-color: white;
+    }
+    .actions {
+      display: flex;
+      .comments,
+      .sent {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        color: rgba(51, 51, 51, 0.603);
+        &:hover {
+          color: rgba(51, 51, 51, 0.903);
+        }
+        * {
+          margin: 0px 4px;
+          font-size: 14px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  border-radius: 5px;
+  .footer {
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 13px;
+      color: rgb(255, 255, 255);
+    }
+  }
+}
+.home .user-post {
+  padding: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.171);
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+    .title-div {
+      display: flex;
+      .name {
+        margin: 0px 10px;
+        h3 {
+          font-weight: 600;
+          font-size: 16px;
+        }
+        span {
+          color: gray;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .body {
+    padding: 10px;
+    p {
+      span {
+        color: blue;
+      }
+    }
+  }
+  .reply {
+    display: flex;
+    width: 100%;
+    margin: 10px 5px;
+    padding: 10px 0px;
+    justify-content: center;
+    color: rgb(92, 92, 92);
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid rgba(128, 128, 128, 0.445);
+    * {
+      font-size: 15px;
+      align-self: center;
+      margin: 0px 3px;
+    }
+  }
+}
+
+//------------------------ Templates
+
+//------------------------ boards
+.boards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .starrted {
+    width: 100%;
+    padding: 5px;
+    .board {
+      height: 100%;
+      width: 160px;
+      padding: 10px;
+      margin: 10px 0px;
+      float: left;
+      .header {
+        display: flex;
+        padding: 10px 0px;
+        h4 {
+          margin-left: 10px;
+        }
+      }
+      .info {
+        border-radius: 5px;
+        background-color: rgb(77, 77, 253);
+        color: white;
+        padding: 0px 5px;
+        p {
+          padding: 15px 0px;
+        }
+        .footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: rgba(255, 255, 255, 0.699);
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .viewed {
+    width: 160px;
+    padding: 10px;
+    margin: 20px 0px;
+    .header {
+      display: flex;
+      padding: 10px 0px;
+      h4 {
+        margin-left: 10px;
+      }
+    }
+    .info {
+      background-color: rgb(67, 67, 255);
+      border-radius: 5px;
+      color: white;
+      padding: 0px 5px;
+      p {
+        padding: 15px 0px;
+      }
+      .footer {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        color: rgba(255, 255, 255, 0.699);
+      }
+    }
+  }
+  .create {
+    background-color: rgba(128, 128, 128, 0.164);
+    height: 100px;
+    width: 160px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    margin-top: 30px;
+    display: flex;
+    font-weight: 100;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.create-new-board {
+  height: 150px;
+  width: 400px;
+  display: flex;
+  background-color: yellowgreen;
+  .info {
+    padding: 10px;
+    width: 70%;
+    color: white;
+    .input {
+      display: flex;
+      margin-bottom: 15px;
+      input {
+        width: 100%;
+        font-size: 16px;
+        border-radius: 5px;
+        color: white;
+        border: 0;
+        background-color: rgba(128, 128, 128, 0.116);
+        padding: 10px;
+        font-weight: 600;
+        &:focus {
+          color: rgb(255, 255, 255);
+          background-color: rgba(131, 131, 131, 0.342);
+        }
+      }
+    }
+  }
+  .colors {
+    padding: 10px 0px;
+    height: 80px;
+    width: 40%;
+    .color {
+      width: 25px;
+      height: 20px;
+      float: left;
+      cursor: pointer;
+      margin: 2px;
+    }
+  }
+}
+.action {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  button {
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+  }
+}
+
+.all-boards {
+  width: 100%;
+  .board {
+    width: 160px;
+    height: 100px;
+    padding: 10px;
+    margin: 40px 0px;
+    float: left;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0px;
+      overflow: hidden;
+      .link {
+        max-width: 150px !important;
+        overflow: hidden !important;
+        h4 {
+          max-width: 100% !important;
+        }
+      }
+      .delete {
+        color: black;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 5px;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+    .info {
+      background-color: rgb(67, 67, 255);
+      border-radius: 5px;
+      color: white;
+      padding: 0px 5px;
+      p {
+        padding: 15px 0px;
+      }
+      .footer {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        color: rgba(255, 255, 255, 0.699);
+      }
+    }
+  }
+}

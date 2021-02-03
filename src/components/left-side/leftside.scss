@@ -1,0 +1,112 @@
+.container {
+  display: flex !important;
+  padding: 35px 100px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.left-side {
+  width: 250px;
+}
+.link {
+  color: black !important;
+  text-decoration: none;
+}
+.left-side .tabs {
+  .tab {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    &:hover {
+      background-color: rgba(224, 224, 224, 0.768);
+    }
+    * {
+      font-size: 18px;
+    }
+    h3 {
+      margin: 0px 10px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+  .active-tab {
+    color: rgb(43, 43, 255);
+    background-color: rgba(224, 224, 224, 0.768);
+    width: 100%;
+  }
+}
+
+.left-side .teams {
+  margin-top: 20px;
+  .add-new-team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+    * {
+      font-size: 13px;
+      color: rgb(82, 82, 82);
+      cursor: pointer;
+      padding: 3px;
+      transition: all 0.3s;
+    }
+    .icon {
+      &:hover {
+        background-color: rgba(128, 128, 128, 0.178);
+      }
+    }
+  }
+  .team {
+    padding: 5px;
+    .title {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      .text {
+        display: flex;
+        align-items: center;
+      }
+      .arrow-down {
+        display: flex;
+        align-items: center;
+      }
+
+      * {
+        font-size: 18px;
+      }
+      h3 {
+        margin: 0px 10px;
+        font-size: 15px;
+      }
+    }
+  }
+  .items {
+    padding: 0px 30px;
+    transition: all .2s;
+    overflow: hidden;
+  
+    .item {
+      padding: 10px 0px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      &:hover {
+        * {
+          color: black;
+        }
+      }
+      * {
+        color: gray;
+        font-size: 16px;
+      }
+      h5 {
+        font-weight: 400;
+        font-size: 13px;
+        margin: 0px 8px;
+      }
+    }
+  }
+}
